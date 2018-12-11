@@ -7,12 +7,25 @@
 	<body>
 		<h1>this is {{name}}</h1>
 
-		<a href='/about'>About Page</a>
+		<a href='/about'>Click here to Weather Page</a>
 		<br>
-		{{test_function welcomeMessage}}
 
-		{{weatherResults}}
+		<br>
+		<form action='/homepage' method="POST" id="homepageForm">
+			<input name="keyWord"  placeholder="Enter keyword" />
+			<input id="button" type="submit" value="Get Picture" />
+		</form>
 
-		{{> footer}}
+		<div style="background-image: url({{pic1}}); position: absolute; top: 50%; left: 2%; height: 25%; width: 25%; background-size: cover"></div>
+		<div style="background-image: url({{pic2}}); position: absolute; top: 50%; left: 23%; height: 25%; width: 25%; background-size: cover"></div>
+		<div style="background-image: url({{pic3}}); position: absolute; top: 50%; left: 42%; height: 25%; width: 25%; background-size: cover"></div>
+		<div style="background-image: url({{pic4}}); position: absolute; top: 50%; left: 60%; height: 25%; width: 25%; background-size: cover"></div>
+		<div style="background-image: url({{pic5}}); position: absolute; top: 50%; left: 78%; height: 25%; width: 25%; background-size: cover"></div>
+
+
+
+
+
+
 	</body>
 </html>
