@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<header>
+		This is the About Page!
+	</header>
+
+	<body>
+		<h1>this is {{name}}</h1>
+
+		<a href='/'>Homepage</a>
+		<br>
+		<form action='/about' method="POST" id="testForm">
+			<input name="locationName"  placeholder="Location" />
+		</form> 
+
+		{{inputLocation}}
+
+		{{results}}
+
+		{{> footer}}
+	</body>
+</html>
